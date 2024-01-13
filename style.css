@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.dark-container{
+  background: #0D0231;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.light-container{
+  background: #DAD7E0;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.togglebtn{
+  height: 15%;
+  width: 70%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 2rem;
+}
+
+.tbutton-dark{
+  background: #221745;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tbutton-light{
+  background: #6236F5;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (max-device-width: 480px){
+  .togglebtn{
+    height: 15%;
+    width: 100%;
+    border: 1px solid white;
+  }
+
+}
