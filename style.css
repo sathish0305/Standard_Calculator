@@ -10,7 +10,7 @@ body{
 
 .inner-container{
   height: 100dvh;
-  width: 40%;
+  width: 25%;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: end;
-  border: 1px solid greenyellow;
 }
 
 .tbutton-dark{
@@ -65,16 +64,88 @@ body{
   justify-content: center;
 }
 
+.empty-container{
+  height: 15%;
+  width: 100%;
+}
+
+.display-container{
+  height: 15%;
+  width: 100%;
+  border: 1px solid yellowgreen;
+}
+
+.equation-container{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.dark-equation{
+  color: #DAD7E0;
+  margin-right: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  opacity: 0.4;
+}
+
+.display{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.dark-display{
+  color: #DAD7E0;
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.buttons{
+  height: 55dvh;
+  width: 100%;
+  border: 1px solid rgb(255, 47, 175);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button{
+  height: 4rem;
+  width: 5rem;
+  background: #221745;
+  border-radius: 1rem;
+}
+
+.operator{
+  background: #6236F5;
+}
 
 @media only screen and (max-device-width: 480px){
   .inner-container{
     height: 100dvh;
     width: 100%;
-    border: 1px solid red;
   }
 
   .togglebtn{
     height: 10%;
     width: 95%;
+  }
+
+  .button{
+    height: 4rem;
+    width: 5rem;
+    background: #221745;
+    border-radius: 1rem;
+  }
+
+  .operator{
+    background: #6236F5;
   }
 }
