@@ -7,13 +7,11 @@ body{
   display: flex;
   align-items: center;
   font-family: Inter;
-
 }
 
 .inner-container{
   height: 100dvh;
-  width: 25%;
-  border: 1px solid red;
+  /* width: 25%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,12 +37,22 @@ body{
   align-items: center;
 }
 
+.dark-title{
+  color: #DAD7E0;
+  font-size: 1.5rem;
+}
+
+.light-title{
+  color: #221745;
+  font-size: 1.5rem;
+}
+
 .togglebtn{
   height: 15%;
   width: 95%;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .tbutton-dark{
@@ -123,17 +131,16 @@ body{
   font-weight: 500;
 }
 
-.buttons{
+.dark-buttons{
   height: 55dvh;
   width: 90%;
   margin-left: 1.1rem;
-  /* border: 1px solid rgb(255, 47, 175); */
   display: grid;
   grid-template-columns: repeat(4,1fr);
   align-items: center;
 }
 
-.button{
+.dark-button{
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
@@ -143,9 +150,27 @@ body{
   align-items: center;
   color: white;
   font-size: x-large;
+  margin: 0.3rem;
 }
 
-.operator{
+.light-button{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: x-large;
+  margin: 0.3rem;
+}
+
+.dark-operator{
+  background: #6236F5;
+}
+
+.light-operator{
   background: #6236F5;
 }
 
@@ -160,17 +185,30 @@ body{
     width: 95%;
   }
 
-  .buttons{
+  .dark-buttons{
     margin-right: 1.3rem;
   }
-  .button{
+
+  .dark-button{
     height: 4rem;
     width: 4rem;
     background: #221745;
     border-radius: 50%;
   }
 
-  .operator{
+  .light-button{
+    height: 4rem;
+    width: 4rem;
+    background: #FFFFFF;
+    border-radius: 50%;
+  }
+
+  .dark-operator{
     background: #6236F5;
+  }
+
+  .light-operator{
+    background: #6236F5;
+    color: white;
   }
 }
