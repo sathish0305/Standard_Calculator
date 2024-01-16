@@ -7,7 +7,6 @@ let operatorbuttons = document.getElementsByClassName('dark-operator')
 let title = document.getElementById('title')
 let darkbuttons = Array.from(darkbutton)
 let opbuttons = Array.from(operatorbuttons)
-
 togglebtn.innerHTML = `<i class="fa-solid fa-circle-half-stroke fa-lg" style="color: #ffffff;"></i>`
 let toggler = ()=>{
     let a = container.classList.toggle('light-container')
@@ -24,7 +23,6 @@ let toggler = ()=>{
             element.classList.add('light-button')
             element.classList.remove('dark-button')
         })
-
         opbuttons.forEach((element)=>{
             element.classList.add('light-operator')
             element.classList.remove('dark-operator')
@@ -41,7 +39,6 @@ let toggler = ()=>{
             element.classList.add('dark-button')
             element.classList.remove('light-button')
         })
-
         opbuttons.forEach((element)=>{
             element.classList.remove('light-operator')
             element.classList.add('dark-operator')

@@ -1,12 +1,12 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Inter;
 }
 
 body{
   display: flex;
   align-items: center;
-  font-family: Inter;
 }
 
 .inner-container{
@@ -153,6 +153,10 @@ body{
   margin: 0.3rem;
 }
 
+.dark-button:active{
+  background-color: #a070ff;
+}
+
 .light-button{
   height: 4rem;
   width: 4rem;
@@ -164,6 +168,11 @@ body{
   color: black;
   font-size: x-large;
   margin: 0.3rem;
+  box-shadow: white 0.1rem 1rem 20rem 0.1rem;
+}
+
+.light-button:active{
+  background-color: #a070ff;
 }
 
 .dark-operator{
@@ -171,6 +180,7 @@ body{
 }
 
 .light-operator{
+  color: white;
   background: #6236F5;
 }
 
